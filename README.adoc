@@ -1,0 +1,19 @@
+= dk.jarry.wildfly.camel.activemq
+
+
+
+== 
+
+Queue ToDo need to be added på standalone-full.xml
+
+[source,xml]
+----
+<jms-queue name="ToDo" entries="java:/jms/queue/ToDo"/>
+----
+
+== Activate code
+
+[source,bash]
+----
+# curl http://localhost:8080/camel-rest-activemq/resources/todos/17
+----
